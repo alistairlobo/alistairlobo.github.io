@@ -38,16 +38,16 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Meh!</a>
+                <a href="./index.html" onclick=$("#menu-close").click();>Alistair Lobo</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="./index.html" onclick=$("#menu-close").click();>Home</a>
             </li>
             <li>
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                <a href="#services" onclick=$("#menu-close").click();>What I'm Good At</a>
             </li>
             <li>
                 <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
@@ -75,28 +75,74 @@
                 <div class="col-lg-12 text-center">
                     <div class="span3 well">
                         <center>
-                        <a href="#aboutModal" data-toggle="modal" data-target="#mySelf"><img src="img/me.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
-                        <h3>Alistair Lobo</h3>
-                        <em>click my face for more</em>
-                        <div class="modal fade" id="mySelf" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Modal Header</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <!--<p>Some text in the modal.</p>-->
-                                        <!--<iframe src="resume/416c5f526573756d655f32303137.pdf" width="100%" height="300px"></iframe>-->
-                                    </div>
-                                    <div class="modal-footer">
-                                        <!--<button type="button" class="btn btn-default" download>Download</button>-->
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <!--<a href="resume/416c5f526573756d655f32303137.pdf" class="btn btn-default" download>Download</a><a class="btn btn-default" data-dismiss="modal">Close</a>-->
-                                    </div>
-                                </div>                        
+                            <a href="#aboutModal" data-toggle="modal" data-target="#mySelf"><img src="img/me.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
+                            <h3>Alistair Lobo</h3>
+                            <em>click my face for more</em>
+                            <div class="modal fade" id="mySelf" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Myself</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table table-bordered table-condensed table-responsive">
+                                                <thead class="thead-inverse"> 
+                                                    <tr>
+                                                        <td>Academic Record</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">BE (<em>​SEMS 1-7</em>)</th>
+                                                        <td>2013 - 17</td>
+                                                        <td>Don Bosco Institute of Technology, Mumbai.</td>
+                                                        <td>7.71/10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">XII Standard</th>
+                                                        <td>2012 - 13</td>
+                                                        <td>St. Andrew’s Junior College. (​<em>MAH State Board</em>)</td>
+                                                        <td>64.50%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">X Standard</th>
+                                                        <td>2010 - 11</td>
+                                                        <td>Don Bosco High School. (<em>​MAH State Board</em>)</td>
+                                                        <td>83.64%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Achievements</th>
+                                                        <td>
+                                                            Won certificate of recognition for volunteering for the same Ethical Hacking workshop I had won a year ago given below.
+                                                            <em>Aug 2016</em>
+                                                        </td>
+                                                        <td>
+                                                            Won Free certification course on Ethical Hacking.
+                                                            <em>Dec 2015</em>
+                                                        </td>
+                                                        <td>
+                                                            Won Best Conduct Award in T.E. Computer Engineering DBIT.
+                                                            <em>Sept 2015</em>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Certifications</th>
+                                                        <td>
+                                                            Won A grade certificate by U.N. for "<em>Rio+21 IYWC INDIA PROGRAM</em>"
+                                                            Short Term Course in Water Cooperation.
+                                                            <em>Dec 2013</em>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>                                       
+                                        </div>
+                                        <div class="modal-footer">                                        
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>                        
+                                </div>
                             </div>
-                        </div>
                         </center>
                     </div>
                     <!--<h2>Stylish Portfolio is the perfect theme for your next project!</h2>
@@ -290,8 +336,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light" data-toggle="modal" data-target="#myResume">View Me!</a>
+                    <h3>The button below is impossible to resist.</h3>
+                    <!--<a href="#" class="btn btn-lg btn-light" data-toggle="modal" data-target="#myResume">View Me!</a>
                     <div class="modal fade" id="myResume" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -299,18 +345,18 @@
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     <h4 class="modal-title">Modal Header</h4>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body">-->
                                     <!--<p>Some text in the modal.</p>-->
-                                    <iframe src="resume/416c5f526573756d655f32303137.pdf" width="100%" height="300px"></iframe>
+                                    <!--<iframe src="resume/416c5f526573756d655f32303137.pdf" width="100%" height="300px"></iframe>
                                 </div>
-                                <div class="modal-footer">
+                                <div class="modal-footer">-->
                                     <!--<button type="button" class="btn btn-default" download>Download</button>-->
                                     <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                                    <a href="resume/416c5f526573756d655f32303137.pdf" class="btn btn-default" download>Download</a><a class="btn btn-default" data-dismiss="modal">Close</a>
-                                </div>
+                                    <!--<a href="resume/416c5f526573756d655f32303137.pdf" class="btn btn-default" download>Download</a><a class="btn btn-default">Close</a>-->
+                                <!--</div>
                             </div>                        
                         </div>
-                    </div>
+                    </div>-->
                     <a href="resume/416c5f526573756d655f32303137.pdf" class="btn btn-lg btn-dark" download>Download Me!</a>
                 </div>
             </div>
