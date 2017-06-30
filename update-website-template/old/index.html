@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="My Portfolio">
+        <meta name="author" content="Alistair Lobo">
+        <link rel="icon" href="img/favicon-address-card-o.ico" type="image/ico">
+        <title>Alistair Lobo</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/stylish-portfolio.css" rel="stylesheet">
+        
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="./" onclick=$("#menu-close").click();>Alistair Lobo</a>
+                </li>
+                <li>
+                    <a href="./" onclick=$("#menu-close").click();>Home</a>
+                </li>
+                <li>
+                    <a href="#about" onclick=$("#menu-close").click();>About</a>
+                </li>
+                <li>
+                    <a href="#services" onclick=$("#menu-close").click();>What I'm Good At</a>
+                </li>
+                <li>
+                    <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Header -->
+        <header id="top" class="header">
+            <div class="text-vertical-center">
+                <!--<h1>Meh!</h1>
+                <h3>Your Personal Front_End Dev</h3>-->
+                <br>            
+                <!--<a href="#about" class="btn btn-dark btn-lg">F.O.M.</a>-->
+            </div>
+            <div id="anime-arrow" class="arrow animated bounce">
+                <!--<a class="fa fa-angle-down fa-2x" href="#"></a>-->
+                <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K" />
+            </div>
+        </header>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="span3 well">
+                            <center>
+                                <a href="#aboutModal" data-toggle="modal" data-target="#mySelf"><img src="img/me.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
+                                <h3>Alistair Lobo</h3>
+                                <em>click my face for more</em>
+                                <div class="modal fade" id="mySelf" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Myself</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Under Construction!</p>                                                
+                                            </div>
+                                            <div class="modal-footer">                                        
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                </div>
+                            </center>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Services -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <section id="services" class="services bg-primary">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>What I'm Good At</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-html5 fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>HTML5</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-css3 fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>CSS</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-android fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Android</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linux fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Linux</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-wordpress fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Wordpress</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-joomla fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Joomla</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-git fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Git</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="service-item">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-drupal fa-stack-1x text-primary"></i>
+                                </span>
+                                    <h4>
+                                        <strong>Drupal</strong>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-light">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Callout -->
+        <!--<aside class="callout">
+            <div class="text-vertical-center">
+                <h1>Vertically Centered Text</h1>
+            </div>
+        </aside>-->
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Some of My Work</h2>
+                        <hr class="small">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="projects/tn2k16/index.html">
+                                        <img class="img-portfolio img-responsive" src="img/TN16Capture.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="projects/tn2k17/index.html">
+                                        <img class="img-portfolio img-responsive" src="img/TN17Capture.PNG">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    </a>
+                                </div>
+                            </div>-->
+                        </div>
+                        <!-- /.row (nested) -->
+                        <a href="#" class="btn btn-dark disabled">View More Items</a>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Call to Action -->
+        <aside class="call-to-action bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>The button below is impossible to resist.</h3>
+                        <!--<a href="#" class="btn btn-lg btn-light" data-toggle="modal" data-target="#myResume">View Me!</a>
+                        <div class="modal fade" id="myResume" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">-->
+                                        <!--<p>Some text in the modal.</p>-->
+                                        <!--<iframe src="resume/416c5f526573756d655f32303137.pdf" width="100%" height="300px"></iframe>
+                                    </div>
+                                    <div class="modal-footer">-->
+                                        <!--<button type="button" class="btn btn-default" download>Download</button>-->
+                                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                        <!--<a href="resume/416c5f526573756d655f32303137.pdf" class="btn btn-default" download>Download</a><a class="btn btn-default">Close</a>-->
+                                    <!--</div>
+                                </div>                        
+                            </div>
+                        </div>-->
+                        <a href="resume/416c5f526573756d655f32303137.pdf" class="btn btn-lg btn-dark" download>Download Me!</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.2340547803261!2d72.84693182920577!3d18.978423999196508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU4JzQyLjMiTiA3MsKwNTAnNTAuOSJF!5e0!3m2!1sen!2sin!4v1497861155934" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        <!-- Map -->
+        <section id="contact" class="map">
+            <iframe width="100%" height="60%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.2340547803261!2d72.84693182920577!3d18.978423999196508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU4JzQyLjMiTiA3MsKwNTAnNTAuOSJF!5e0!3m2!1sen!2sin!4v1497861155934"></iframe>
+            <br />
+            <small>
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.2340547803261!2d72.84693182920577!3d18.978423999196508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU4JzQyLjMiTiA3MsKwNTAnNTAuOSJF!5e0!3m2!1sen!2sin!4v1497861155934"></a>
+            </small>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h4><strong>Alistair Lobo</strong>
+                        </h4>
+                        <p>19, 20, Bombay Timber Market,<br>Signal Hill Avenue,
+                            <br>Reay Road, Mumbai 400 010</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i>+91 99205 82911</li>
+                            <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:alistairlobo95@gmail.com">alistairlobo95@gmail.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedin.com/in/alistair-lobo-32a13185"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/alistair_lobo9"><i class="fa fa-twitter-square fa-fw fa-3x"></i></a>
+                            </li>  
+                            <li>
+                                <a href="https://plus.google.com/u/0/109709894841855399490"><i class="fa fa-google-plus-square fa-fw fa-3x"></i></a>
+                            </li>                      
+                            <li>
+                                <a href="https://www.facebook.com/alistair.lobo9"><i class="fa fa-facebook-official fa-fw fa-3x"></i></a>
+                            </li>                                                
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; Alistair Lobo 2017</p>
+                    </div>
+                </div>
+            </div>
+            <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script>
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Scrolls to the selected menu item on the page
+        $(function() {
+            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        //#to-top button appears after scrolling
+        var fixed = false;
+        $(document).scroll(function() {
+            if ($(this).scrollTop() > 250) {
+                if (!fixed) {
+                    fixed = true;
+                    // $('#to-top').css({position:'fixed', display:'block'});
+                    $('#to-top').show("slow", function() {
+                        $('#to-top').css({
+                            position: 'fixed',
+                            display: 'block'
+                        });
+                    });
+                    $('#anime-arrow').hide("slow", function() {
+                        $('#anime-arrow').css({
+                            display: 'none'
+                        });
+                    });
+                }
+            } else {
+                if (fixed) {
+                    fixed = false;
+                    $('#to-top').hide("slow", function() {
+                        $('#to-top').css({
+                            display: 'none'
+                        });
+                    });
+                    $('#anime-arrow').show("slow", function() {
+                        $('#anime-arrow').css({
+                            display: 'block'
+                        });
+                    });
+                }
+            }
+        });
+        // Disable Google Maps scrolling
+        // See http://stackoverflow.com/a/25904582/1607849
+        // Disable scroll zooming and bind back the click event
+        var onMapMouseleaveHandler = function(event) {
+            var that = $(this);
+            that.on('click', onMapClickHandler);
+            that.off('mouseleave', onMapMouseleaveHandler);
+            that.find('iframe').css("pointer-events", "none");
+        }
+        var onMapClickHandler = function(event) {
+                var that = $(this);
+                // Disable the click handler until the user leaves the map area
+                that.off('click', onMapClickHandler);
+                // Enable scrolling zoom
+                that.find('iframe').css("pointer-events", "auto");
+                // Handle the mouse leave event
+                that.on('mouseleave', onMapMouseleaveHandler);
+            }
+            // Enable map zooming with mouse scroll when the user clicks the map
+        $('.map').on('click', onMapClickHandler);
+        </script>        
+    </body>
+</html>
