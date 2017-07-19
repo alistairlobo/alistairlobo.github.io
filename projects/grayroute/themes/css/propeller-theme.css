@@ -153,8 +153,11 @@ form.theme-inverse .checkbox-rounded .pmd-checkbox [type="checkbox"]:checked + .
 .bg-fill-red{ background-color:#EF3648;}
 
 /*======= Navbar =======*/
+.material-icons-dark{
+	color: #1f2f46;
+}
 .navbar-inverse .navbar-nav > li > a{ color:#fff;}
-.navbar-inverse .navbar-brand{color:#fff;}
+.navbar-inverse .navbar-brand{color:##1f2f46;}
 .pmd-user-info a{color:#fff;}
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{ background-color:#2764c9;}
