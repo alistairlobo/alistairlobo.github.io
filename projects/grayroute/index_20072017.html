@@ -317,15 +317,15 @@
 
 <!-- Scripts Starts -->
 <script src="assets/js/jquery-1.12.2.min.js"></script>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 	(function($) {
 	  $('aside span').click(function() {
 	    $(this).addClass('active').siblings('span').removeClass('active');
 	    $('section:nth-of-type('+$(this).data('rel')+')').stop().fadeIn(400, 'linear').siblings('section').stop().fadeOut(400, 'linear'); 
 	  });
 	})(jQuery);
-</script> -->
-<!-- <script>
+</script>
+<script>
 $(function () {
 
 $('a[href^="#"]').click(function(event) {
@@ -338,14 +338,14 @@ event.preventDefault();
 });
 
 });
-</script> -->
+</script>
 <script type="text/javascript">
 	$('.nav a').click(function(){  
     //Toggle Class
-    // $(".active").removeClass("active");      
-    // $(this).closest('li').addClass("active");
-    // var theClass = $(this).attr("class");
-    // $('.'+theClass).parent('li').addClass('active');
+    $(".active").removeClass("active");      
+    $(this).closest('li').addClass("active");
+    var theClass = $(this).attr("class");
+    $('.'+theClass).parent('li').addClass('active');
     //Animate
     $('html, body').stop().animate({
         scrollTop: $( $(this).attr('href')).offset().top - 160
