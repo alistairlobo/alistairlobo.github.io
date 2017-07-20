@@ -186,7 +186,7 @@ h2.typo-fill-secondary{ color:rgba(77, 87, 93, 0.68); font-size:22px;}
 }
 
 /*footer*/
-.admin-footer { background: #fff none repeat scroll 0 0; border-top: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 32px; padding-top: 17px; transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0s; margin-top:-70px; position:relative; z-index:1;} /*padding-bottom: 32px; */
+.admin-footer { background: transparent none repeat scroll 0 0; border-top: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 32px; padding-top: 17px; transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1) 0s; margin-top:-70px; position:relative; z-index:1;} /*padding-bottom: 32px; */
 .pmd-sidebar ~ .admin-footer { padding-left: 64px; }
 .pmd-sidebar.pmd-sidebar-open ~ .admin-footer { padding-left: 290px;}
 .copyright-text { color: #fff; font-size: 14px; padding-top: 8px;} /*#4d575d*/
