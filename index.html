@@ -23,6 +23,23 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+    <!-- <style>
+      .fade-in{
+        -webkit-animation: fade-in 2s ease;
+        -moz-animation: fade-in ease-in-out 2s both;
+        -ms-animation: fade-in ease-in-out 2s both;
+        -o-animation: fade-in ease-in-out 2s both;
+        animation: fade-in 2s ease;
+        visibility: visible;
+        -webkit-backface-visibility: hidden;
+      }
+
+      @-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+      @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+      @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+      @keyframes fade-in{0%{opacity:0} 100%{opacity:1}} 
+
+    </style> -->
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -73,7 +90,7 @@
     </script> -->
     
   </head>
-  <body style="background: url('https://alistairlobo.github.io/projects/tn2k17/img/wall2.jpg');">
+  <body id="backBaby">
     <div id="all">
       <div class="container-fluid">
         <div class="row row-offcanvas row-offcanvas-left"> 
@@ -346,6 +363,12 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/front.js"></script>
     <script src="projects/grayroute/assets/js/propeller.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+    <script type="text/javascript">
+      var bgColorArray = ['img/bg/1.png','img/bg/2.png','img/bg/3.png','img/bg/4.png','img/bg/5.png','img/bg/6.png','img/bg/7.png','img/bg/8.png','img/bg/9.png','img/bg/10.png'],
+      selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
+      document.body.style.backgroundImage = 'url(' + selectBG + ')';
+    </script>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
