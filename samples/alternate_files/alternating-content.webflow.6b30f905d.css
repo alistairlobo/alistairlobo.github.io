@@ -2,7 +2,7 @@
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family: 'Roboto', sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
@@ -15,7 +15,8 @@
 body {
   height: 100vh;
   background-color: #d1d0c0;
-  font-family: Raleway, sans-serif;
+  /*font-family: Raleway, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 20px;
@@ -28,7 +29,8 @@ h1 {
   margin: 0px auto 18px;
   padding-right: 2%;
   padding-left: 2%;
-  font-family: Raleway, sans-serif;
+  /*font-family: Raleway, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
@@ -54,7 +56,8 @@ h3 {
 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Lato, sans-serif;
+  /*font-family: Lato, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-size: 38px;
   line-height: 38px;
   font-weight: 400;
@@ -79,7 +82,8 @@ h6 {
 p {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-family: Lato, sans-serif;
+  /*font-family: Lato, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -88,7 +92,8 @@ p {
   display: inline-block;
   padding: 8px 12px;
   background-color: #cc8300;
-  font-family: Raleway, sans-serif;
+  /*font-family: Raleway, sans-serif;*/
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   font-size: 1em;
   line-height: 1em;
@@ -125,7 +130,7 @@ p {
 
 .responsive-photo._01 {
   background-image: url("../img/zarir.jpg");
-  background-position: -21px 50%;
+  background-position: 50% 50%;
   background-size: cover;
 }
 
@@ -267,13 +272,19 @@ p {
 
 @media (max-width: 479px) {
   .responsive-photo._01 {
-    background-position: 8% 50%;
+    background-position: 50% 50%;
   }
   .responsive-photo._02 {
-    background-position: 8% 50%;
+    background-position: 50% 50%;
   }
   .responsive-photo._03 {
-    background-position: 25% 50%;
+    background-position: 50% 50%;
+  }
+  .responsive-photo._04 {
+    background-position: 50% 50%;
+  }
+  .responsive-photo._05 {
+    background-position: 50% 50%;
   }
   .page-margins {
     padding-right: 0%;
