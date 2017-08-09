@@ -114,7 +114,7 @@ p {
 
 .content-margins {
   width: 100%;
-  padding: 10px 29px;
+  /*padding: 10px 29px;*/
   float: none;
 }
 
@@ -124,20 +124,36 @@ p {
 }
 
 .responsive-photo._01 {
-  background-image: url("https://daks2k3a4ib2z.cloudfront.net/54c6a26a3d5e25a202c7d619/54c6bdf507ca05337c53b20b_04_1200x500.jpg");
+  background-image: url("../img/zarir.jpg");
   background-position: -21px 50%;
   background-size: cover;
 }
 
 .responsive-photo._02 {
-  background-image: url("https://daks2k3a4ib2z.cloudfront.net/54c6a26a3d5e25a202c7d619/54c6be5e895b6e357c45d698_SpiderLandscapeFull_1200.jpg");
+  background-image: url("../img/garth.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .responsive-photo._03 {
-  background-image: url("https://daks2k3a4ib2z.cloudfront.net/54c6a26a3d5e25a202c7d619/54c6be88895b6e357c45d69a_Spider06HR.jpg");
+  background-image: url("../img/gavin.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.responsive-photo._04 {
+  background-image: url("../img/atish.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.responsive-photo._05 {
+  background-image: url("../img/loy.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -148,12 +164,12 @@ p {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 64px 3%;
+  /*padding: 64px 3%;*/
 }
 
 .vert-center {
   position: relative;
-  top: 50%;
+  top: 45%;
   padding-right: 6%;
   padding-left: 6%;
   -webkit-transform: translate(0px, -50%);
@@ -164,24 +180,24 @@ p {
 .section {
   display: block;
   height: auto;
-  max-width: 1180px;
+  /*max-width: 1180px;*/
   margin-right: auto;
   margin-left: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
   text-align: center;
 }
 
 .left {
   width: 50%;
-  height: 400px;
+  height: 500px;
   float: left;
   background-color: #fff;
 }
 
 .right {
   width: 50%;
-  height: 400px;
+  height: 500px;
   float: right;
   background-color: #fff;
 }
