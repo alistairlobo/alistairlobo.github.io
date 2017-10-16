@@ -1,0 +1,67 @@
+.share ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.share li
+{
+    
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+    list-style-type: none;
+    
+}
+
+
+.share h2 
+{
+    margin:0;
+    display: inline;
+}
+
+.share label
+{
+	width: 150px;
+	display: inline-block;
+	float: left;
+	padding: 3px;
+
+}
+.share button
+{
+	margin-left: 156px;
+
+}
+
+button.submit
+{
+	font-family: times,serif;
+	font-size: 13px;
+	background-color: #68b12f;
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 1px 0 #396715;
+}
+.share input
+{
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 0px 3px #aaa;
+}
