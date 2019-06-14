@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fun Tech Studios | Home</title>
@@ -25,18 +26,40 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
     <style type="text/css">
-      .box-masonry h4 {
-        font-size: 11px;
-      }
-      .box-masonry .box-masonry-hover-text-header p {
-        font-size: 11px;
-      }
-      .box-masonry .box-masonry-text p {
-        font-size: 11px;
-      }
-      a {
-        text-decoration: none !important;
-      }
+        .box-masonry h4 {
+            font-size: 11px;
+        }
+        
+        .box-masonry .box-masonry-hover-text-header p {
+            font-size: 11px;
+        }
+        
+        .box-masonry .box-masonry-text p {
+            font-size: 11px;
+        }
+        
+        a {
+            text-decoration: none !important;
+        }
+        
+        .social {
+            color: #f35626;
+            background-image: -webkit-linear-gradient(2deg, #f35626 0%, #feab3a 100%);
+            background-image: -o-linear-gradient(2deg, #f35626 0%, #feab3a 100%);
+            background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: hue 60s infinite linear;
+        }
+        
+        @keyframes hue {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(-360deg);
+            }
+        }
     </style>
     <!-- <style>
       .fade-in{
@@ -55,10 +78,11 @@
       @keyframes fade-in{0%{opacity:0} 100%{opacity:1}} 
 
     </style> -->
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-      <!-- <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function(){
           $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
               localStorage.setItem('activeTab', $(e.target).attr('href'));
@@ -84,7 +108,8 @@
       });
     </script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/bootstrap.min.js">
+    </script>
     <script src="js/active.js"></script>
     <!-- <script language="JavaScript">
       VIH_BackColor = "palegreen";
@@ -103,198 +128,229 @@
           $('#ipadd').append(document.getElementById($storeip));
       });
     </script> -->
-  <meta name="google-site-verification" content="Lp6uiO-nGnViK_9tx0L5OkzgTOoBiYDVlevhc_j5sv0" /> 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128693104-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta name="google-site-verification" content="Lp6uiO-nGnViK_9tx0L5OkzgTOoBiYDVlevhc_j5sv0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128693104-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-128693104-1');
-  </script>   
-  </head>
-  <body>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128693104-1');
+    </script>
+</head>
+
+<body>
     <div id="all">
-      <div class="container-fluid">
-        <div class="row row-offcanvas row-offcanvas-left"> 
-          <!--   *** SIDEBAR ***-->
-          <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
-            <div class="sidebar-content">
-              <!-- <h1 class="sidebar-heading"> <a href="./">Alistair Lobo</a></h1> -->
-              <h1 class="sidebar-heading"> <a href="./"><img src="./img/ft_logo.svg" style="vertical-align: bottom !important;"></a></h1>
-              <p class="sidebar-p">Welcome to <code>Fun Tech Studios</code> !</p>
-              <p class="sidebar-p">Home to the most creative <!-- <code>front-end developer</code> --><code>website developer & designer</code> with <code>2</code> years of experience. </p>
-              <p class="sidebar-p">Originally from <code>Mumbai</code>, currently based in the same place. </p>
-              <ul class="sidebar-menu"> 
-                <li class="active"><a href="./">Home</a></li>
-                <li><a href="about.html">About</a></li>
-<!--                 <li><a href="kd_portfolio.html">Kissdoodles Portfolio</a></li> -->
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Get in touch</a></li>
-              </ul>
-              <p class="social"><a href="https://www.facebook.com/alistair.lobo9" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/alistair_lobo9" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="https://plus.google.com/u/0/109709894841855399490" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="https://www.instagram.com/alistairlobo95" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="https://bitbucket.org/alistairlobo95" title="" class="external bitbucket"><i class="fa fa-bitbucket"></i></a><a href="mailto:alistair@funtechstudios.com" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a><a href="https://www.linkedin.com/in/alistair-lobo-32a13185/" data-animate-hover="pulse" class="email"><i class="fa fa-linkedin"></i></a><a href="resume/416c5f526573756d655f32303137.pdf" title="" class="email"><i class="fa fa-download"></i></a></p>
-              <div class="copyright">
-                <p class="credit">&copy;2019 <a href="./" class="external">Fun Tech Studios</a></p>
-                <!-- <p id="ipadd"></p> -->
-                <!-- <p class="credit">&copy;2016 Alistair Lobo | Template by <a href="https://bootstrapious.com/tutorials" class="external">Bootstrapious</a></p> -->
-                <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
-                
-              </div>
-            </div>
-          </div>
-          <!--   *** SIDEBAR END ***  -->
-          <!--   *** PORTFOLIO ***-->
-          <div class="col-xs-12 col-sm-8 col-md-9 content-column"> <!-- white-background -->
-            <div class="small-navbar visible-xs">
-              <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
-              <!-- <h1 class="small-navbar-heading"> <a href="./">Alistair Lobo<img src="./img/ft_logo.svg"></a></h1> -->
-              <h1 class="small-navbar-heading"><a href="./"><img src="./img/ft_logo.svg" height="90px" style="vertical-align: bottom !important;"></a></h1>
-            </div>
-            <div class="grid">
-              <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="https://bhagattarachand.com" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/bhagattarachandcom.jpg" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="https://bhagattarachand.com">B BHAGAT TARACHAND</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Restaurant website.</p>
-                      </div>
+        <div class="container-fluid">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <!--   *** SIDEBAR ***-->
+                <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+                    <div class="sidebar-content">
+                        <!-- <h1 class="sidebar-heading"> <a href="./">Alistair Lobo</a></h1> -->
+                        <h1 class="sidebar-heading">
+                            <a href="./"><img src="./img/ft_logo.svg" style="vertical-align: bottom !important;"></a>
+                        </h1>
+                        <p class="sidebar-p">Welcome to <code>Fun Tech Studios</code> !</p>
+                        <p class="sidebar-p">Home to the most creative
+                            <!-- <code>front-end developer</code> --><code>website developer & designer</code> with <code>2</code> years of experience. </p>
+                        <p class="sidebar-p">Originally from <code>Mumbai</code>, currently based in the same place. </p>
+                        <ul class="sidebar-menu">
+                            <li class="active"><a href="./">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <!--                 <li><a href="kd_portfolio.html">Kissdoodles Portfolio</a></li> -->
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Get in touch</a></li>
+                        </ul>
+                        <p class="social"><a href="https://www.facebook.com/alistair.lobo9" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/alistair_lobo9" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com/u/0/109709894841855399490" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="https://www.instagram.com/alistairlobo95" title="" class="external instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://bitbucket.org/alistairlobo95" title="" class="external bitbucket"><i class="fa fa-bitbucket"></i></a><a href="mailto:alistair@funtechstudios.com" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a><a href="https://www.linkedin.com/in/alistair-lobo-32a13185/" data-animate-hover="pulse"
+                                class="email"><i class="fa fa-linkedin"></i></a><a href="resume/416c5f526573756d655f32303137.pdf" title="" class="email"><i class="fa fa-download"></i></a></p>
+                        <div class="copyright">
+                            <p class="credit">&copy;2019 <a href="./" class="external">Fun Tech Studios</a></p>
+                            <!-- <p id="ipadd"></p> -->
+                            <!-- <p class="credit">&copy;2016 Alistair Lobo | Template by <a href="https://bootstrapious.com/tutorials" class="external">Bootstrapious</a></p> -->
+                            <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
+
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/gdbcl/index.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/GDBCL15WS.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="projects/gdbcl/index.html">GDBCL 2015</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Green Campus for DBCL. </p>
-                      </div>
+                <!--   *** SIDEBAR END ***  -->
+                <!--   *** PORTFOLIO ***-->
+                <div class="col-xs-12 col-sm-8 col-md-9 content-column">
+                    <!-- white-background -->
+                    <div class="small-navbar visible-xs">
+                        <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+                        <!-- <h1 class="small-navbar-heading"> <a href="./">Alistair Lobo<img src="./img/ft_logo.svg"></a></h1> -->
+                        <h1 class="small-navbar-heading">
+                            <a href="./"><img src="./img/ft_logo.svg" height="90px" style="vertical-align: bottom !important;"></a>
+                        </h1>
                     </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="http://dbit.acm.org/al_backup_site" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/ACM16WS.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="http://dbit.acm.org/al_backup_site">ACM 2016</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Webmaster for ACM. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="http://dbit.acm.org/al_backup_site" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/acm1.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="#">Webmaster for ACM DBIT</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Was elected Webmaster, the Association for Computing Machinery or ACM of our college, DBIT. Website developed using <code>WordPress</code>.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="#" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/DELL16C.PNG" alt="" class="img-responsive"></a> <!-- http://dellcampassador.com/leaderboard.aspx -->
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="#">Dell Campassador 2016</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Official Dell Campus Ambassador for DBIT. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>                               
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="#" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/dell1.PNG" alt="" class="img-responsive"></a> <!-- http://dellcampassador.com/leaderboard.aspx -->
-                    <div class="box-masonry-text">
-                      <h4> <a href="#">Proud Dell Campus Ambassador for DBIT</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Was chosen the best fit Dell Campus Ambassador or Dell Campassador for DBIT in whole of India, to conduct various online and offline activities for peers to help spread technological ideas among each other. There were other <code>145</code> Chosen Campassdors in other parts of India and being one of them was a really great privilege.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="http://dbcl.dbclkurla.in" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/DBCL16WS.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="http://dbcl.dbclkurla.in">DBCL 2016</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>College campus website. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="http://dbcl.dbclkurla.in" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/dbcl1.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="http://dbcl.dbclkurla.in">DBCL Campus Website</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Created a website for the Campus, DBIT. Website developed using <code>WordPress</code>.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/tn2k16/index.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/TN16WS.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="projects/tn2k16/index.html">Teknack 2016</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Online gaming festival animation. (year 1) </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/tn2k16/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime1.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="#">Walking Man Animation</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Was the first time i tried comic animation using <code>skrollr.js</code> for manipulation of the <code>CSS</code> selectors at particular intervals.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/tn2k16/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime2.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="#">Flying Bird Animation</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>The ending of the animation for my comical story which was followed by the loading of the main website and entry to the games for registered users.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/tn2k17/index.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/TN17WS.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-hover-text-header"> 
-                      <h4> <a href="projects/tn2k17/index.html">Teknack 2017</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>Online gaming festival animation. (year 2) </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/tn2k17/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime3.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="#">Animated SVG Rocket</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>A mini-part of the scrollable story of the animation mentioned in Teknack 2017 given above using <code>space.js</code> and some amount of <code>skrollr.js</code> to the animation's best advantage.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
-                  <div class="box-masonry"><a href="projects/tn2k17/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime4.PNG" alt="" class="img-responsive"></a>
-                    <div class="box-masonry-text">
-                      <h4> <a href="#">Animated Flying Spaceman</a></h4>
-                      <div class="box-masonry-desription">
-                        <p>A flying astronaut going across the page during the end of the animation followed by loading of main website and game events.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="https://bhagattarachand.com" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/bhagattarachandcom.jpg" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="https://bhagattarachand.com">B BHAGAT TARACHAND</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Restaurant website.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/gdbcl/index.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/GDBCL15WS.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="projects/gdbcl/index.html">GDBCL 2015</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Green Campus for DBCL. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="http://dbit.acm.org/al_backup_site" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/ACM16WS.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="http://dbit.acm.org/al_backup_site">ACM 2016</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Webmaster for ACM. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="http://dbit.acm.org/al_backup_site" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/acm1.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="#">Webmaster for ACM DBIT</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Was elected Webmaster, the Association for Computing Machinery or ACM of our college, DBIT. Website developed using <code>WordPress</code>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="#" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/DELL16C.PNG" alt="" class="img-responsive"></a>
+                                    <!-- http://dellcampassador.com/leaderboard.aspx -->
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="#">Dell Campassador 2016</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Official Dell Campus Ambassador for DBIT. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="#" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/dell1.PNG" alt="" class="img-responsive"></a>
+                                    <!-- http://dellcampassador.com/leaderboard.aspx -->
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="#">Proud Dell Campus Ambassador for DBIT</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Was chosen the best fit Dell Campus Ambassador or Dell Campassador for DBIT in whole of India, to conduct various online and offline activities for peers to help spread technological ideas among each other.
+                                                There were other <code>145</code> Chosen Campassdors in other parts of India and being one of them was a really great privilege.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="http://dbcl.dbclkurla.in" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/DBCL16WS.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="http://dbcl.dbclkurla.in">DBCL 2016</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>College campus website. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="http://dbcl.dbclkurla.in" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/dbcl1.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="http://dbcl.dbclkurla.in">DBCL Campus Website</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Created a website for the Campus, DBIT. Website developed using <code>WordPress</code>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/tn2k16/index.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/TN16WS.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="projects/tn2k16/index.html">Teknack 2016</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Online gaming festival animation. (year 1) </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/tn2k16/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime1.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="#">Walking Man Animation</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Was the first time i tried comic animation using <code>skrollr.js</code> for manipulation of the <code>CSS</code> selectors at particular intervals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/tn2k16/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime2.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="#">Flying Bird Animation</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>The ending of the animation for my comical story which was followed by the loading of the main website and entry to the games for registered users.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/tn2k17/index.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/TN17WS.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-hover-text-header">
+                                        <h4> <a href="projects/tn2k17/index.html">Teknack 2017</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>Online gaming festival animation. (year 2) </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/tn2k17/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime3.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="#">Animated SVG Rocket</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>A mini-part of the scrollable story of the animation mentioned in Teknack 2017 given above using <code>space.js</code> and some amount of <code>skrollr.js</code> to the animation's best advantage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                <div class="box-masonry">
+                                    <a href="projects/tn2k17/index.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/anime4.PNG" alt="" class="img-responsive"></a>
+                                    <div class="box-masonry-text">
+                                        <h4> <a href="#">Animated Flying Spaceman</a></h4>
+                                        <div class="box-masonry-desription">
+                                            <p>A flying astronaut going across the page during the end of the animation followed by loading of main website and game events.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
                   <div class="box-masonry"><a href="#" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/business-card-26.jpg" alt="" class="img-responsive"></a>
                     <div class="box-masonry-text">
                       <h4> <a href="#">Name of the work 2</a></h4>
@@ -304,7 +360,7 @@
                     </div>
                   </div>
                 </div> -->
-                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
                   <div class="box-masonry"><a href="#" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-responsive"></a>
                     <div class="box-masonry-text">
                       <h4> <a href="#">Name of the work 3</a></h4>
@@ -314,7 +370,7 @@
                     </div>
                   </div>
                 </div> -->
-                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item"> 
                   <div class="box-masonry">
                     <div class="box-masonry-text">
                       <h4> <a href="#">Item without image</a></h4>
@@ -394,33 +450,36 @@
                     </div>
                   </div>
                 </div> -->
-              </div>
-            </div>
-          </div>
-          <!--   *** PORTFOLIO END ***
+                        </div>
+                    </div>
+                </div>
+                <!--   *** PORTFOLIO END ***
           -->
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- TAWK.TO -->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/59fdc78c198bd56b8c0393fc/1bu3momu1';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/59fdc78c198bd56b8c0393fc/1bu3momu1';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
-    
+
     <!-- Javascript files-->
-    
-    <script src="js/jquery.cookie.js"> </script>
+
+    <script src="js/jquery.cookie.js">
+    </script>
     <script src="js/ekko-lightbox.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
@@ -430,20 +489,29 @@
     <script src="projects/grayroute/assets/js/propeller.min.js"></script>
     <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script> -->
     <script type="text/javascript">
-      var bgColorArray = ['img/bg/1.png','img/bg/2.png','img/bg/3.png','img/bg/5.png','img/bg/6.png','img/bg/7.png','img/bg/8.png','img/bg/9.png','img/bg/10.png'],
-      selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
-      document.body.style.backgroundImage = 'url(' + selectBG + ')';
+        var bgColorArray = ['img/bg/1.png', 'img/bg/2.png', 'img/bg/3.png', 'img/bg/5.png', 'img/bg/6.png', 'img/bg/7.png', 'img/bg/8.png', 'img/bg/9.png', 'img/bg/10.png'],
+            selectBG = bgColorArray[Math.floor(Math.random() * bgColorArray.length)];
+        document.body.style.backgroundImage = 'url(' + selectBG + ')';
     </script>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
-  </body>
+</body>
+
 </html>
