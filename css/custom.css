@@ -18,7 +18,13 @@ code,
     -o-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    text-fill-color: transparent;
     -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
     -webkit-animation: hue 60s infinite linear;
     -moz-animation: hue 60s infinite linear;
     -o-animation: hue 60s infinite linear;
