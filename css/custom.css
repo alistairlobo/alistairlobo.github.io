@@ -4,6 +4,10 @@ p {
     text-align: left;
 }
 
+code {
+    font-weight: 700;
+}
+
 .fa,
 code,
 .tawk_ico,
