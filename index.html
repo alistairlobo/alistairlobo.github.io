@@ -42,18 +42,29 @@
             text-decoration: none !important;
         }
         
-        p.social a i {
+        .social.a.i {
             color: #999999;
             border-color: solid 1px #999999;
             background-image: -webkit-linear-gradient(2deg, #9400D3 0%, #FF0000 100%);
+            background-image: -moz-linear-gradient(2deg, #9400D3 0%, #FF0000 100%);
             background-image: -o-linear-gradient(2deg, #9400D3 0%, #FF0000 100%);
             background-image: linear-gradient(92deg, #9400D3 0%, #FF0000 100%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-font-smoothing: antialiased;
+            -webkit-animation: hue 60s infinite linear;
             -moz-animation: hue 60s infinite linear;
             -o-animation: hue 60s infinite linear;
             animation: hue 60s infinite linear;
+        }
+        
+        @-webkit-keyframes hue {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(-360deg);
+            }
         }
         
         @-moz-keyframes hue {
