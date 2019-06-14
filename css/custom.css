@@ -5,6 +5,7 @@ p {
 }
 
 .fa,
+code,
 .sidebar-menu li.active a {
     color: #999999;
     border-color: solid 1px #999999;
