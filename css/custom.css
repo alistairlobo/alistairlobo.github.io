@@ -2,12 +2,30 @@
 
 p {
     text-align: left;
+    font-weight: 500;
+    color: #3d3d3d !important;
+    /*font-size: 15px !important;*/
+}
+.box-masonry .box-masonry-text p {
+    font-size: 14px !important;
+}
+
+.credit,
+.sidebar-p {
+    font-size: 15px !important;
+}
+
+.external, li {
+    color: #3d3d3d !important;
 }
 
 code {
     font-weight: 700;
+    font-size: 14px !important;
 }
 
+h1,h2,h3,h4,h5,
+.progress-title,
 .fa,
 code,
 .tawk_ico,
