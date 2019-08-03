@@ -20,6 +20,10 @@ p {
     font-family: 'Josefin Sans', sans-serif !important;
 }
 
+h4, .progress-title {
+    text-transform: none !important;
+}
+
 .credit,
 .sidebar-p {
     font-size: 15px !important;
@@ -41,6 +45,7 @@ code {
 }
 
 h1,h2,h3,h4,h5,
+.lead,
 .progress-title,
 .fa,
 code,
