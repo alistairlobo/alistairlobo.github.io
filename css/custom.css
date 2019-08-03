@@ -8,7 +8,8 @@ p {
 }
 
 .box-masonry .box-masonry-image {
-    display: inline !important;
+    /*display: inline !important;*/
+    min-height: 0px !important;
 }
 
 .box-masonry .box-masonry-text p {
