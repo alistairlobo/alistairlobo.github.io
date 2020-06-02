@@ -1,0 +1,2 @@
+##Gameplay
+Boy needs to collect some stars, but is allergic to bugs and hates water! Use the keyboard arrows to lead boy to collect the stars. Avoid both the bugs and water, and be careful; those darn bugs get faster and angrier when you take their stars!
