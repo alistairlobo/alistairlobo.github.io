@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
+.img-circle:first-child {
+    border-radius: 0% !important;
+}
+
 p {
     text-align: left;
     font-weight: 500;
