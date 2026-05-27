@@ -3,18 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATS CV Compiler</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Universal ATS CV Compiler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <style>
+        /* Strict print overrides ensuring the design remains invisible during export */
+        @media print {
+            body { background: white !important; }
+            #control-panel { display: none !important; }
+            #resume-preview-wrapper { padding: 0 !important; margin: 0 !important; background: white !important; }
+            #resume-preview { width: 100% !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important; }
+            @page { size: letter; margin: 0.5in; }
+        }
+        
+        /* ATS Structural Typographical Classes */
+        .ats-flow { font-family: "Helvetica", "Arial", sans-serif; color: #111111; font-size: 10pt; line-height: 1.4; }
+        .ats-flow h1 { font-size: 18pt; font-weight: bold; text-align: center; text-transform: uppercase; margin-bottom: 6px; color: #000000; }
+        .ats-flow h2 { font-size: 11pt; font-weight: bold; text-transform: uppercase; border-bottom: 1px solid #cccccc; margin-top: 16px; margin-bottom: 6px; padding-bottom: 2px; page-break-after: avoid; color: #000000; }
+        .ats-flow h3 { font-size: 10pt; font-weight: bold; margin-top: 10px; margin-bottom: 4px; page-break-after: avoid; color: #1f2937; }
+        .ats-flow p { margin-bottom: 6px; }
+        .ats-flow p:has(a), .ats-flow p:first-of-type + p { text-align: center; font-size: 9.5pt; margin-bottom: 2px; }
+        .ats-flow ul { margin-bottom: 8px; padding-left: 18px; list-style-type: disc; }
+        .ats-flow li { margin-bottom: 3px; }
+        .ats-flow strong, .ats-flow b { font-weight: bold; color: #000000; }
+    </style>
 </head>
-<body>
-    <div id="control-panel">
-        <h2>ATS Resume Compiler</h2>
-        <p>Editing source data inside <code>data/input/resume.md</code> dynamically populates the preview below.</p>
-        <button onclick="window.print()">Compile & Export PDF</button>
-    </div>
+<body class="bg-slate-50 min-h-screen flex flex-col antialiased">
 
-    <main id="resume-preview" class="ats-cv-flow"></main>
+    <header id="control-panel" class="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-50 transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            
+            <div class="flex items-center gap-3 w-full sm:w-auto">
+                <div class="p-2 bg-indigo-600 rounded-lg text-white shadow-md shadow-indigo-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-slate-900 tracking-tight">Universal ATS CV Compiler</h1>
+                    <p class="text-xs text-slate-500 font-medium">Convert plain markdown into high-contrast vector PDFs</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+                <label for="md-upload" class="cursor-pointer bg-slate-100 text-slate-700 hover:bg-slate-200 font-semibold text-sm px-4 py-2.5 rounded-lg border border-slate-300 transition-colors duration-150 shadow-sm">
+                    Choose Markdown File
+                </label>
+                <input type="file" id="md-upload" accept=".md" class="hidden" />
+                
+                <button id="print-btn" onclick="window.print()" disabled class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg shadow-md shadow-indigo-100 transition-all duration-150 disabled:bg-slate-200 disabled:text-slate-400 disabled:shadow-none disabled:cursor-not-allowed flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                    Export ATS PDF
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="resume-preview-wrapper" class="flex-1 py-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-slate-100 transition-all duration-200">
+        
+        <main id="resume-preview" class="bg-white mx-auto shadow-xl border border-slate-200 rounded-xl p-[20mm] transition-all duration-300 max-w-[210mm] min-h-[297mm]">
+            <div id="placeholder-message" class="flex flex-col items-center justify-center min-h-[200mm] border-2 border-dashed border-slate-200 rounded-lg p-8 text-center bg-slate-50/50">
+                <div class="w-12 h-12 bg-slate-100 text-slate-400 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                </div>
+                <h3 class="text-slate-700 font-semibold text-base mb-1">No file loaded yet</h3>
+                <p class="text-slate-400 text-sm max-w-sm">Select a Markdown file from your computer using the upload button to generate an ATS-optimized live preview.</p>
+            </div>
+        </main>
+
+    </div>
 
     <script src="js/app.js"></script>
 </body>
