@@ -1,0 +1,121 @@
+/* --- Web Interface Styling --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#control-panel {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e1e4e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#control-panel h2 { margin: 0; font-size: 1.2rem; }
+#control-panel p { margin: 5px 0 0 0; font-size: 0.85rem; color: #666; }
+
+button {
+    background-color: #24292e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover { background-color: #0366d6; }
+
+/* --- Core ATS Layout Structure (Screen Preview) --- */
+#resume-preview {
+    background: white;
+    width: 210mm; /* Standard Letter/A4 proportional constraint */
+    min-height: 297mm;
+    margin: 30px auto;
+    padding: 20mm;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+/* --- Clean Text Typography Rules --- */
+.ats-cv-flow {
+    font-family: "Helvetica", "Arial", sans-serif; /* Highly safe ATS fonts */
+    font-size: 10pt;
+    line-height: 1.4;
+    color: #111111;
+}
+
+.ats-cv-flow h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.ats-cv-flow h2 {
+    font-size: 11pt;
+    border-bottom: 1px solid #cccccc;
+    margin: 16px 0 6px 0;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    page-break-after: avoid; /* Prevents orphaned section headings */
+}
+
+.ats-cv-flow h3 {
+    font-size: 10pt;
+    margin: 10px 0 4px 0;
+    page-break-after: avoid;
+}
+
+.ats-cv-flow p {
+    margin: 0 0 6px 0;
+}
+
+/* Clean formatting translations for Top Meta Blocks */
+.ats-cv-flow p:has(a), 
+.ats-cv-flow p:first-of-type + p {
+    text-align: center;
+    font-size: 9.5pt;
+    margin-bottom: 2px;
+}
+
+.ats-cv-flow ul {
+    margin: 0 0 8px 0;
+    padding-left: 18px;
+}
+
+.ats-cv-flow li {
+    margin-bottom: 3px;
+}
+
+/* --- Strict Print System Overrides (Triggers when printing to PDF) --- */
+@media print {
+    body {
+        background: white;
+        -webkit-print-color-adjust: exact; /* Forces browsers to respect layout line colors */
+        print-color-adjust: exact;
+    }
+    
+    #control-panel {
+        display: none !important; /* Strips browser interface from document output */
+    }
+    
+    #resume-preview {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    @page {
+        size: letter;
+        margin: 0.5in; /* Safe standard boundaries for modern parser parsing software */
+    }
+}
