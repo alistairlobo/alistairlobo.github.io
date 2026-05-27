@@ -24,12 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
             // Build raw markdown tokens straight into structured inner layout trees
             const htmlContent = marked.parse(clearedText);
             
-            // Remove the modern application shell styles from the preview container to inject true text flow
-            previewContainer.removeAttribute('class');
-            previewContainer.className = "bg-white mx-auto shadow-xl border border-slate-200 rounded-xl p-[20mm] transition-all duration-300 max-w-[210mm] min-h-[297mm] ats-flow";
+            // RESET CONTAINER: Completely clear out the dashboard placeholder layout formatting
+            previewContainer.innerHTML = '';
             
-            // Render the inner text block
+            // Reapply strict standard layout properties for a clean printable page flow
+            previewContainer.className = "bg-white mx-auto shadow-xl border border-slate-200 rounded-xl p-[20mm] transition-all duration-300 w-full max-w-[210mm] min-h-[297mm] ats-flow text-left block";
+            
+            // Inject the converted HTML content
             previewContainer.innerHTML = htmlContent;
+            
+            // Enable the export feature action button
             printButton.disabled = false;
             
             // Re-map document meta-title directly to enforce programmatic output filenames on save
@@ -38,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         reader.onerror = () => {
+            previewContainer.className = "bg-white mx-auto shadow-xl border border-slate-200 rounded-xl p-[20mm] max-w-[210mm] min-h-[297mm] block";
             previewContainer.innerHTML = `
                 <div class="bg-red-50 border border-red-200 text-red-700 p-5 rounded-lg font-sans shadow-sm max-w-2xl mx-auto my-12">
                     <div class="flex gap-3">
